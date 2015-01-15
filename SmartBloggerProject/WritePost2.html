@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-2 no-js">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/navtest.css" />
+    <script src="js/snap.svg-min.js"></script>
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style type="text/css">
+
+            .tags {
+  padding: 0;
+  margin: 0;
+}
+
+.custom {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+  top: -300px;
+  right: -300px;
+}
+.tags a:focus { outline: 0; }
+.tags a {
+  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.12) 0%, rgba(0,0,0,0.1) 99%, rgba(0,0,0,0.1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.12)), color-stop(99%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.1)));
+  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: -o-linear-gradient(top,  rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: linear-gradient(top,  rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+
+  -webkit-border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+
+  border: 1px solid;
+  border-left: 0;
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 5px 0;
+  padding: 0 10px;
+  height: 25px;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 25px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  text-decoration: none;
+
+}/*
+.tags a:before {
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.12) 0%, rgba(0,0,0,0.1) 99%, rgba(0,0,0,0.1) 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,0.12)), color-stop(99%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.1)));
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+  background-image: linear-gradient(rgba(255,255,255,0.12) 0%,rgba(0,0,0,0.1) 99%,rgba(0,0,0,0.1) 100%);
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+  /*M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+  zoom: 1;
+
+  -webkit-box-shadow: 1px 0px 0 rgba(255,255,255,0.5) inset;
+  -moz-box-shadow: 1px 0px 0 rgba(255,255,255,0.5) inset;
+  box-shadow: 1px 0px 0 rgba(255,255,255,0.5) inset;
+
+  content: '';
+  z-index: -1;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: -10px;
+  top: 3px;
+
+  border: 1px solid;
+  border-right: 0;
+  border-top: 0;
+}
+.tags a:after {
+  background: #fff;
+  border: 1px solid #888;
+  border-radius: 5px;
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 9px;
+  left: 0;
+}*/
+.tags a:hover {
+  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(0,0,0,0.1)));
+  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: -o-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+}
+.tags a:hover:before {
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.1) 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(0,0,0,0.1)));
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+  background-image: linear-gradient(rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.1) 100%);
+}
+.tags a:active {
+  background-image: -moz-linear-gradient(top,  rgba(0,0,0,0.14) 0%, rgba(255,255,255,0.12) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.14)), color-stop(100%,rgba(255,255,255,0.12)));
+  background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: -o-linear-gradient(top,  rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: linear-gradient(top,  rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+}
+.tags a:active:before {
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.14) 0%, rgba(255,255,255,0.12) 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.14)), color-stop(100%,rgba(255,255,255,0.12)));
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: -o-linear-gradient(rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: -ms-linear-gradient(rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+  background-image: linear-gradient(rgba(0,0,0,0.14) 0%,rgba(255,255,255,0.12) 100%);
+}
+
+.tags .inset {
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* === Customs ========== */
+
+.tags a,
+.tags a:before { background-color: #b7b7b7;}
+.tags a,
+.tags a:after,
+.tags a:before { border-color: #777; }
+.tags a.inset { color: #454545; /* Here you can override the default rgba(0,0,0,0.5); */ }
+
+.tags .tag-red,
+.tags .tag-red:before { background-color: #f25c48;}
+.tags .tag-red,
+.tags .tag-red:after,
+.tags .tag-red:before { border-color: #bc4738; }
+.tags .tag-red.inset { color: #8a241e; }
+
+.tags .tag-blue,
+.tags .tag-blue:before { background-color: #0b9db7;}
+.tags .tag-blue,
+.tags .tag-blue:after,
+.tags .tag-blue:before { border-color: #087184; }
+.tags .tag-blue.inset { color: #054854; }
+
+.tags .tag-orange,
+.tags .tag-orange:before { background-color: #f28f1a;}
+.tags .tag-orange,
+.tags .tag-orange:after,
+.tags .tag-orange:before { border-color: #bb6e14; }
+.tags .tag-orange.inset { color: #7e4a0d; }
+            #fill {
+                height: 250px;
+                width: 250px;
+                background-color: #FFF5E6;
+                position: relative;
+                right: -650px;
+                top: -350px;
+                text-align: center;
+
+            }
+
+            #x1 {
+                font-weight: bold;
+                
+                font-size: 20px;
+            }
+
+            #italic {
+                font-style: italic;
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            .myButton {
+                -moz-box-shadow: 1px 2px 4px 1px #242320;
+                -webkit-box-shadow: 1px 2px 4px 1px #242320;
+                box-shadow: 1px 2px 4px 1px #242320;
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+                background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+                background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+                background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+                background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+                background-color:#eae0c2;
+                -moz-border-radius:10px;
+                -webkit-border-radius:10px;
+                border-radius: 4px;
+                border:1px solid #333029;
+                display:inline-block;
+                cursor:pointer;
+                color:#505739;
+                font-family:Trebuchet MS;
+                font-size:16px;
+                font-weight:bold;
+                padding:9px 42px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #ffffff;
+                position: relative;
+                top: 400px;
+                right: 70px;
+            }
+            .myButton:hover {
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+                background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+                background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+                background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+                background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+                background-color:#ccc2a6;
+            }
+            .myButton:active {
+                position:relative;
+                top:1px;
+            }
+            #filler {
+                height: 65px;
+            }
+
+            #title_post {
+                position: relative;
+                top: 35px;
+                right: -55px;
+                font-weight: bolder;
+                font-size: 16px;
+                color: #000;
+            }
+
+            #background_color{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #000;
+                opacity: 0.5;
+            }
+
+            #other {
+                opacity:1;
+            }
+
+            textarea#styleid{
+                color:#666;
+                font-size:14px;
+                -moz-border-radius: 8px; -webkit-border-radius: 8px;
+                margin:5px 0px 10px 0px;
+                padding:10px;
+                /*height:75px;
+                width:350px;*/
+                border:#999 1px solid;
+                font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                transition: all 0.25s ease-in-out;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                position: relative;
+                right: -60px;
+                top: 20px;
+            }
+
+            textarea#styleid:focus{
+                color:#000;
+                outline:none;
+                border:#35a5e5 1px solid;
+                font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+                -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+                -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            }
+
+            #slide {
+                /*background: #000;
+                opacity: 0.3;*/
+                color: #000;
+                height: 530px;
+                position: relative;
+
+                -moz-animation-name: dropHeader;
+                -moz-animation-iteration-count: once;
+                -moz-animation-timing-function: ease-in;
+                -moz-animation-duration: 1s;
+
+                -webkit-animation-name: dropHeader;
+                -webkit-animation-iteration-count: once;
+                -webkit-animation-timing-function: ease-in;
+                -webkit-animation-duration: 1s;
+            }
+            @-moz-keyframes dropHeader {
+                0% {
+                    top: -530px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+            @-webkit-keyframes dropHeader {
+                0% {
+                    top: -530px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+      <!-- Top Navigation -->
+      <div id="header">
+    <div class="inner-header">
+      <div class="toplogo" onclick="window.location = '/';" style="cursor:pointer;">
+
+      </div>
+
+      <div id="topmenu">
+          <div class="menu">
+            <div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-1722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1722"><a href="home.html">Home</a></li>
+              <li id="menu-item-1546" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1546"><a href="WritePost.html">Write Article</a></li>
+              <li id="menu-item-1544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1544"><a href="">Notifications</a></li>
+            </ul></div>         </div>
+      </div>
+
+      <div id="submenu">
+              <div id="topSearch">
+                <div class="search">
+                  <form method="get" class="searchform" id="searchform-1" action="">
+                    <div>
+                      <input class="searchtext" type="text" name="s" id="searchtext-1" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+      <input type="submit" value="Go" class="searchsubmit" id="searchsubmit-1" value="Search" />
+    </div>
+  
+  </form>
+
+</div><!-- search -->
+        </div>
+      </div>
+
+    </div>
+  </div><!-- header -->
+      <!--End of Top Navigation -->
+ 
+                <div id="filler"> 
+                </div>
+                <div id="slide">
+                    <div id="background_color"></div>
+                    <div id="other">
+                       
+                        <label id="title_post">TITLE</label>
+                        <textarea id="styleid" rows="1" cols="60" placeholder="Title of your article."></textarea>
+                        <br />
+                        <textarea id="styleid" rows="20" cols="67" placeholder="Be brief and concise." style="opacity:1;"></textarea>
+                        <button class="myButton">POST</button>
+                        <div id="fill">
+                             <br />
+                             <span id="x1">GUIDELINES</span>
+                             <br /><br />
+                             <span id="x1">STEP 1 :</span> Post your article.
+                             <br /><br />
+                             &nbsp;&nbsp;&nbsp;<span id="x1">STEP 2 :</span> Select tags <span id="italic">pertinent</span>  to your article. 
+                             <br /><br />
+                             Congrats! You have made a scuccesful post.
+                        </div>
+                        <p class="tags custom">
+    <a href="#">Entity Framework</a>
+    <a href="#" class="tag-blue">ASP.NET</a>
+    <a href="#" class="tag-orange inset">Scrum</a>
+    <a href="#" class="tag-red">Was</a>
+    <a href="#" class="tag-blue inset">jsfiddle</a>
+    <a href="#" class="inset">My plan</a>
+    <a href="#" class="tag-orange">This</a>
+    <a href="#" class="tag-red inset">Commander</a>
+</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </body>
+            </html>
+
+            
+
+
