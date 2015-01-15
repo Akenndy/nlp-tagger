@@ -1,0 +1,106 @@
+
+#usquare_1 {	width: 630px;	position: relative;	margin: 0 auto; display:  
+block;			clear: both;   margin-left: 3px;}
+
+#usquare_1 .usquare_module_wrapper {	width: 100%;	position: relative;	display: block;}
+
+#usquare_1 .usquare_module_wrapper h2 { font-weight: 100 !important; font-style: regular !important; font-size: 34px !important; line-height: 34px !important;}
+
+#usquare_1 .usquare_module_wrapper span { font-weight: 100 !important; font-style: regular !important; font-size: 14px !important; line-height: 14px !important;}
+
+#usquare_1 .usquare_block_extended .usquare_about { font-weight: 100 !important; font-style: regular !important; font-size: 14px !important; line-height: 14px !important;}
+
+#usquare_1 .usquare_module_wrapper span.bold {	font-family: "PTSansRegular" !important; font-weight: 100 !important; font-style: regular !important; font-size: 14px !important; line-height: 14px !important;}
+
+#usquare_1 .usquare_block {	width: 300px;	height: 140px;   margin: 5px;
+}
+#usquare_1 .full_usquare_square {	width: 300px; 	height: 140px; 	cursor: pointer;}
+#usquare_1 .half_usquare_square {	width: 150px; 	height: 140px; 	cursor: pointer;}
+#usquare_1 .right_gray_usquare_square {	position: absolute;	left:  150px;}
+#usquare_1 .usquare_block_extended {	width: 300px; 	height: 300px; 	margin-top: 140px; }
+#usquare_1 .usquare_block_extended .close {	left: 260px;}
+#usquare_1 .usquare_about { width: 300px; clear: both; margin: 0px; padding-left: 17px; height: 225px;}
+#usquare_1 .usquare_about .viewport { width: 260px; height: 225px; }
+
+
+
+.usquare_block
+{
+		-webkit-animation-duration: 2s;
+		   -moz-animation-duration: 2s;
+		    -ms-animation-duration: 2s;
+		    
+		-webkit-animation-iteration-count: 1;
+		   -moz-animation-iteration-count: 1;
+		    -ms-animation-iteration-count: 1;
+	}
+
+
+.usquare_block:hover{
+  
+top:-1px;
+  left:-1px;
+  z-index:1001;
+  opacity:1;
+  background: radial-gradient(ellipse at top left, #111, #fff);
+box-shadow: 8px 8px 15px #111111;
+
+}
+
+
+.usquare_block:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.3),
+              -3px -3px 20px rgba(0,0,0,0.5);
+}
+
+
+
+.scrollable {
+  overflow-y:auto;
+  overflow-x:hidden;
+  height:455px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #FAAC58;
+}
+
+
+  .scrollable::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+  }
+
+  .scrollable::-webkit-scrollbar-button:start:decrement,
+  .scrollable::-webkit-scrollbar-button:end:increment {
+    height: 15px;
+    visibility:hidden;
+    background-color:#FE9A2E;
+  }
+
+  .scrollable::-webkit-scrollbar-track-piece {
+    background-color:#FEDA81;
+    -webkit-border-radius: 100px;
+  }
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

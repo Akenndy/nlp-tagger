@@ -1,0 +1,43 @@
+jQuery.easing.jswing = jQuery.easing.swing;
+
+(function(j, h, o) {
+    var n = h.event,
+        m = h.event.handle ? "handle" : "dispatch",
+        l;
+    h.fn.masonry = function(b) {}
+})(window, jQuery);
+
+UP = {
+    init: function() {
+        generalInit();
+    }
+};
+$(document).ready(UP.init);
+
+function generalInit() {
+    $(document).on("mouseenter", ".thumb:not(.full-width)", function() {
+        $(".cover", this).show();
+        $(this).not(".detailed").css({
+            marginBottom: "5px",
+            marginTop: "15px"
+        })
+    }).on("mouseleave", ".thumb:not(.full-width, .in-use)", function() {
+        $(".cover", this).hide();
+        $(this).not(".detailed").css({
+            marginBottom: "0px",
+            marginTop: "20px"
+        })
+    });
+
+    $(".folio-tab").click(function(c) {
+        c.preventDefault();
+        var b = $(this);
+        var a = $(b.attr("href"));
+        var d = b.attr("val");
+        $(".badge-wrapper").not(a).removeClass("show").addClass("hide");
+        a.removeClass("hide").addClass("show");
+        $(".folio-tab").not(b).removeClass("active").addClass("inactive");
+        b.removeClass("inactive").addClass("active");
+        $(".badge-wrapper .badge-wrapper").removeClass("hide");
+    });  
+}

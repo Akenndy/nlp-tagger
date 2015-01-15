@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-2 no-js">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/navtest.css" />
+		<script src="js/snap.svg-min.js"></script>
+	
+	</head>
+	<body>
+			<div class="container">
+			<!-- Top Navigation -->
+			<div id="header">
+		<div class="inner-header">
+			<div class="toplogo" style="cursor:pointer;">
+
+			</div>
+
+			<div id="topmenu">
+					<div class="menu">
+						<div class="menu-main-container">
+							<ul id="menu-main" class="menu">
+								<li ><a href="home.html">Home</a></li>
+						    	<li ><a href="WritePost.html">Write Article</a></li>
+							    <li ><a href="Notifications.html">Notifications</a></li>
+						</ul></div>					</div>
+			</div>
+
+			<div id="submenu">
+              <div id="topSearch">
+              		<div class="search">
+              		
+              			<div>
+              				<input class="searchtext" type="text" name="s" runat="server" id="mysearchtext" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+			                <input type="button" class="searchsubmit" id="searchbutton" runat="server" />
+		</div>
+	
+	
+
+</div>
+			</div>
+
+		</div>
+<div class="toplogo2" style="cursor:pointer;">
+
+			</div>
+
+
+	</div>
+</div><!-- header -->
+			<!--End of Top Navigation -->
+			<section id="grid" class="grid clearfix">
+				<a href="UserProfile.html" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/2.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>My Profile</h2>
+							<p>Badges Points and more.</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="Posts.html" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/4.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Featured</h2>
+							<p>Hot trending articles.</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/6.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Suggestions</h2>
+							<p>Things suggested to you.</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/8.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Favorites</h2>
+							<p>Articles you like the most.</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+		</div><!-- /container -->
+		<script>
+			(function() {
+	
+				function init() {
+					var speed = 330,
+						easing = mina.backout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+	</body>
+</html>

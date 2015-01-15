@@ -1,0 +1,282 @@
+.grid_6 {
+   display: block;
+   float: left;
+width:auto;
+margin-left: 30px;
+margin-right: 15px;
+margin-bottom: 30px;
+}
+
+
+.space{
+    margin-top: 90px;
+}
+
+
+.cat_orange {
+display: block;
+color: #191919;
+font-size: 12px;
+line-height: 15px;
+}
+.cat_orange .cat_orange_bot {
+    display: inline;
+padding: 20px 20px 17px;
+position: relative;
+margin-left: 80px;
+min-width:100px;
+}
+
+.cat_orange span {
+position: relative;
+color: #fff;
+z-index: 10;
+font-weight: bold;
+font-size: 16px;
+}
+
+.cat_orange em {
+z-index: 10;
+font-style: normal;
+position: relative;
+}
+
+.cat_orange  strong {
+    -webkit-border-radius:30px;
+    opacity: 0.7;
+    background-color: #f59812;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.cat_orange:hover  {
+    color: #f59812;
+}
+.cat_orange:hover  strong {
+    background-color: #000;
+}
+
+
+
+
+.cat_blue {
+display: block;
+color: #191919;
+font-size: 12px;
+line-height: 15px;
+}
+.cat_blue .cat_blue_bot {
+        display: inline;
+
+padding: 20px 20px 17px;
+position: relative;
+margin-top: 20px;
+margin-left: 40px;
+}
+
+.cat_blue span {
+position: relative;
+color: #fff;
+z-index: 10;
+font-weight: bold;
+font-size: 16px;
+}
+
+.cat_blue em {
+z-index: 10;
+font-style: normal;
+position: relative;
+}
+
+.cat_blue  strong {
+    -webkit-border-radius:30px;
+    opacity: 0.7;
+    background-color: #3399FF;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.cat_blue:hover  {
+    color: #3399FF;
+}
+.cat_blue:hover  strong {
+    background-color: #000;
+}
+
+
+
+
+.cat_purple {
+display: block;
+color: #191919;
+font-size: 12px;
+line-height: 15px;
+}
+.cat_purple .cat_purple_bot {
+        display: inline;
+
+padding: 20px 20px 17px;
+position: relative;
+margin-top: 20px;
+margin-left: 40px;
+}
+.cat_purple span {
+position: relative;
+color: #fff;
+z-index: 10;
+font-weight: bold;
+font-size: 16px;
+}
+.cat_purple em {
+z-index: 10;
+font-style: normal;
+position: relative;
+}
+.cat_purple  strong {
+    -webkit-border-radius:30px;
+    opacity: 0.7;
+    background-color: #6633FF;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.cat_purple:hover  {
+    color: #9999FF;
+}
+.cat_purple:hover  strong {
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+.cat_pink {
+display: block;
+color: #191919;
+font-size: 12px;
+line-height: 15px;
+}
+.cat_pink .cat_pink_bot {
+        display: inline;
+
+padding: 20px 20px 17px;
+position: relative;
+margin-top: 20px;
+margin-left: 40px;
+}
+.cat_pink span {
+position: relative;
+color: #fff;
+z-index: 10;
+font-weight: bold;
+font-size: 16px;
+}
+.cat_pink em {
+z-index: 10;
+font-style: normal;
+position: relative;
+}
+.cat_pink  strong {
+    -webkit-border-radius:30px;
+    opacity: 0.7;
+    background-color: #F660AB;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.cat_pink:hover  {
+    color: #F660AB;
+}
+.cat_pink:hover  strong {
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+.cat_green {
+display: block;
+position: relative;
+color: #191919;
+font-size: 12px;
+line-height: 15px;
+}
+.cat_green .cat_green_bot {
+        display: inline;
+
+padding: 20px 20px 17px;
+position: relative;
+margin-top: 20px;
+margin-left: 40px;
+}
+.cat_green span {
+position: relative;
+color: #fff;
+z-index: 10;
+font-weight: bold;
+font-size: 16px;
+}
+.cat_green em {
+z-index: 10;
+font-style: normal;
+position: relative;
+}
+.cat_green  strong {
+    -webkit-border-radius:30px;
+    opacity: 0.7;
+    background-color: #54C571;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.cat_green:hover  {
+    color: #54C571;
+}
+.cat_green:hover  strong {
+    background-color: #000;
+}
+
+
+
+img {
+	width: 100px;
+    height: 100px;
+    border:4px solid black;
+    margin-top:20px;
+}
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-2 no-js">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/navtest.css" />
+ 
+    <link rel="stylesheet" type="text/css" href="css/m-btn.css" />
+   
+        <script type='text/javascript' src='JS/jquery-1.4.1.js'></script>
+        <script type='text/javascript' src='JS/post2.js'></script>
+     <script>
+         function gotosearch() {
+             var search = $("#mysearchtext").val();
+             window.location.href = "SearchResults.img/JohnDoeColor.jpg?search=" + search;
+         }
+        </script>
+        
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style type="text/css">
+
+
+            #filler {
+                height: 65px;
+            }
+
+            #title_post {
+                position: relative;
+                top: 35px;
+                right: -55px;
+                font-weight: bolder;
+                font-size: 16px;
+                color: #000;
+            }
+
+            #background_color{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #000;
+                opacity: 0.8;
+            }
+
+            #other {
+                opacity:1;
+            }
+
+            textarea#Textarea1 {
+                margin-left:30px;
+                margin-top:30px;
+            }
+
+            textarea#styleid{
+                color:#666;
+                font-size:14px;
+                -moz-border-radius: 0px; -webkit-border-radius: 0px;
+                margin:5px 0px 10px 0px;
+                padding:10px;
+           
+                border:#999 1px solid;
+                font-family:"Tahoma", "Lucida Grande", sans-serif;
+                transition: all 0.25s ease-in-out;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+                position: relative;
+                right: -60px;
+                top: 20px;
+            }
+
+            textarea#styleid:focus{
+                color:#000;
+                outline:none;
+                border:#35a5e5 1px solid;
+                font-family:"Tahoma", "Lucida Grande", sans-serif;
+                box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+                -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+                -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            }
+
+            #move_your_ass {
+                position: relative;
+                top: 30px;
+                right: -60px;
+            }
+
+            
+            #slide {
+                /*background: #000;
+                opacity: 0.3;*/
+                color: #000;
+                height: 530px;
+                position: relative;
+
+                -moz-animation-name: dropHeader;
+                -moz-animation-iteration-count: once;
+                -moz-animation-timing-function: ease-in;
+                -moz-animation-duration: 1s;
+
+                -webkit-animation-name: dropHeader;
+                -webkit-animation-iteration-count: once;
+                -webkit-animation-timing-function: ease-in;
+                -webkit-animation-duration: 1s;
+            }
+            @-moz-keyframes dropHeader {
+                0% {
+                    top: -530px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+            @-webkit-keyframes dropHeader {
+                0% {
+                    top: -530px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" id="Form1" action="" runat="server">
+        
+            <div class="container">
+            <!-- Top Navigation -->
+            <div id="header">
+        <div class="inner-header">
+            <div class="toplogo" style="cursor:pointer;">
+
+            </div>
+
+            <div id="topmenu">
+                    <div class="menu">
+                        <div class="menu-main-container">
+                            <ul id="menu-main" class="menu">
+                                <li class="moveleft"><a href="Home.html">Home</a></li>
+                                <li><a href="WritePost.html">Write Article</a></li>
+                                <li ><a href="Notifications.html">Notifications</a></li>
+                            </ul>
+                        </div>                  
+                    </div>
+            </div>
+
+            <div id="submenu">
+              <div id="topSearch">
+                <div class="search">
+                    
+                        <div>
+                            <input class="searchtext" type="text" name="s" runat="server" id="mysearchtext" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+                              
+<input type="button" class="searchsubmit" id="searchbutton" onclick="gotosearch()" />
+                      </div>
+
+              </div><!-- search -->
+              </div>
+            </div>
+            <div class="toplogo2" >
+
+            </div>
+
+        </div>
+    </div><!-- header -->
+            <!--End of Top Navigation -->
+             
+                <div id="filler"> 
+                </div>
+                <div id="slide">
+                    
+                    <div id="other">
+
+
+                         <textarea id="styleid" rows="1" cols="90" placeholder="Title of your article." runat="server"></textarea>
+                        <br />
+                        <textarea id="Textarea1" rows="15" cols="90" placeholder="Be brief and concise." style="opacity:1;" runat="server"></textarea>
+                      
+                        <input type="submit" runat="server" value="POST" class="m-btn" id="post_button"/>
+                        <br /><br /><br />
+                        
+                    </div>
+                    
+                </div></div>
+              <!--  <script type="text/javascript">
+
+                    $('#textarea').textext({ plugins: 'tags' });
+
+
+                </script> -->
+            </form>
+            </body>
+            </html>
+
+           
