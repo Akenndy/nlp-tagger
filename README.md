@@ -1,4 +1,4 @@
-# Smart Blogger
+# NLP Tagger/Smart Blogger
 
 With social media conversations and number of people participating in the conversations growing exponentially, valuable information and expertise is lost in this information overload. Develop an application to summarize free text (social media conversations like Blogs, Posts and Comments) and come out with the keywords (nouns and adjectives). The key parts to the solution are Summarize: Given a free flowing text (English only) the algorithm should identify the keywords (nouns and adjectives). Synonymize: Tag root words for each of the keywords identified. Personalize: build profiles/personas of associates by tying back the root words identified back to the person making such posts
 
