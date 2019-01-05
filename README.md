@@ -4,17 +4,21 @@ With social media conversations and number of people participating in the conver
 
 The actual algorithm and the implementation must be withheld to comply with the agreement with Cognizant Technologies that the core logic cannot be distributed to an external party.
 
-## Design
+## Introduction
+NLP Tagger (aka Smart Blogger), is a blogging application implemented over the One Cognizant Platform to develop an enterprise blogging application to allow users to post blogs/articles and discuss. To connect users, we tag their articles accurately so that similar users can find each other, interact and learn more. This can increase collaboration within the company. We also built an intuitive user interface that engages users using gamification. 
 
-The basic wire frames,and initial HTMLs with no supporting logic can be referred to in this folder understand the flow. The few pages that you can view under the SmartBlogger Folder, were the first few designs approved by our mentors at Cognizant.
+## Algorithm and Design
+
+We tag each article by only using it's own content (as we have no other data point). The lack of a corpus leads us to use a derived version of the tf-idf algorithm where we find correlation between all the words in a document and the frequent words, and then extract important words (algorithm described further in reference-papers/keyword-extraction-from-a-single-document-using-word-co-occurrence-statistical-information.pdf). By automatially tagging articles we prevent key data loss, address ineffective feature extraction in a small dataset. We also make this experience fun and competive through gamification, leaderboards to display popular articles or users and award users points/badges based on their activity (inspired from stack overflow).
 
 ## Working of the application
 
-1) Home.html : The home page / main page
-2) WritePost.html : Users can write a post (there are two suggestions WritePost1.html and WritePost2.html)
-3) Notifications.html : To notify users about any change or update.
-4) Search.html : This page is how the ideal search results look like. The other features in the home page such as suggestions,favorites are built around the same basic look, however the arrangement,colors or subtle features vary to make it easier for the users to differentiate.
-5) UserProfile.html : This is how the user profile looks like. It has a variety of data to capture all the essential details.
+In src/
+1. Home.html : The home page / main page
+2. WritePost.html : Users can write a post (there are two suggestions WritePost1.html and WritePost2.html)
+3. Notifications.html : To notify users about any change or update.
+4. Search.html : This page is how the ideal search results look like. The other features in the home page such as suggestions,favorites are built around the same basic look, however the arrangement,colors or subtle features vary to make it easier for the users to differentiate.
+5. UserProfile.html : This is how the user profile looks like. It has a variety of data to capture all the essential details.
 
 The project report has the detailed screen shots of the final implementation, you can look at it for further information.
 
