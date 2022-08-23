@@ -19,10 +19,10 @@
 	}
 
 	button.onclick = function() {
-		if ( -1 == menu.className.indexOf( 'nav-menu' ) )
+		if ( menu.className.indexOf( 'nav-menu' ) == -1 )
 			menu.className = 'nav-menu';
 
-		if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
+		if ( button.className.indexOf( 'toggled-on' ) != -1 ) {
 			button.className = button.className.replace( ' toggled-on', '' );
 			menu.className = menu.className.replace( ' toggled-on', '' );
 		} else {
